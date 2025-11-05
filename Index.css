@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: black;
+}
+nav{
+  background: #efc900c9;
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  box-shadow: 2px 2px 5px black;
+}
+form{
+  display: flex;
+  flex-direction:column;
+  border: 1px solid gold;
+  background: #90ee905b;
+  border-radius: 5px;
+}
+input, button{
+  margin: 10px;
+}
+input{
+  border: 1px solid gold;
+  height: 50px;
+  width: 300px;
+  border-radius: 5px;
+  background: transparent;
+  padding-left: 10px;
+  color: gold;
+  transition: 1s;
+}
+button{
+  background: gold;
+  border: 1px solid gold;
+  height: 40px;
+  font-size: 1.2em;
+  color: black;
+  border-radius: 5px;
+  font-weight: 5000;
+  font-family: Sans-Serif;
+}
+input::placeholder{
+  color: gold;
+}
+input:focus{
+  border-color: #ff9200;
+  outline: none;
+  height: 52px;
+  width: 302px;
+}
+button:hover{
+  background: gold;
+  color: black;
+}
+.bg-video{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+body::after{
+  content: " ";
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background:
+  linear-gradient(
+  to bottom, transparent, black);
+  z-index: -1;
+}
